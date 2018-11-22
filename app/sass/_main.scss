@@ -71,4 +71,49 @@
       }
     }
   }
+  &-who {
+    background: url(../img/who-desktop-bkg.jpg) center no-repeat #dcdcdc;
+    height: 699px;
+    &-title {
+      color: #707070;
+      text-align: center;
+      font-size: 70px;
+      line-height: 70px;
+      margin:20px auto 58px auto;
+    }
+    &-description {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    &-list {
+      width: 385px;
+      list-style: none;
+      &-item {
+        position: relative;
+        font-size: 19px;
+        line-height: 36px;
+        color: $list;
+        font-weight: bold;
+        &:before {
+          content: '';
+          @include circle(4px);
+          background: #fff;
+          position: absolute;
+          top: 16px;
+          right: -10px;
+        }
+      }
+    }
+    &-info {
+      width: 415px;
+      margin-right: -30px;
+      &-paragraph {
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0;
+        color: $text;
+      }
+    }
+  }
 }
