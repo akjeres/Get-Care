@@ -82,7 +82,7 @@ $(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
     closeHeader();
     $('html, body').animate({
-        scrollTop: ($(window).width() > 992) ? $($.attr(this, 'href')).offset().top : $($.attr(this, 'href')).offset().top - 35
+        scrollTop: ($(window).width() > 992) ? $($.attr(this, 'href')).offset().top : $($.attr(this, 'href')).offset().top - 34
     }, scrollduration);
 });
 /* Smooth scroll ends */

@@ -24,4 +24,51 @@
       }
     }
   }
+  &-about {
+    height: 696px;
+    background: url(../img/about-notification.png) calc(50% + 185px) calc(100% - 58px) no-repeat, url(../img/about-desktop-bkg.jpg) center repeat-x transparent;
+    background-size: auto;
+    &-title {
+      text-align: center;
+      font-size: 74px;
+      line-height: 74px;
+      color: #fff;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin: 20px auto 54px auto;
+    }
+    &-description {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    &-list {
+      width: 350px;
+      list-style: none;
+      &-item {
+        position: relative;
+        font-size: 19px;
+        line-height: 36px;
+        color: $list;
+        &:before {
+          content: '';
+          @include circle(4px);
+          background: #fff;
+          position: absolute;
+          top: 16px;
+          right: -10px;
+        }
+      }
+    }
+    &-info {
+      width: 415px;
+      margin-right: -30px;
+      &-paragraph {
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0;
+        color: $text;
+      }
+    }
+  }
 }

@@ -18,4 +18,51 @@
       }
     }
   }
+  &-about {
+    padding: 15px 0 0 0;
+    background-color: #dbdbdb;
+    height: auto;
+    background-size: 93px, 1320px;
+    background-repeat: no-repeat;
+    background-position: calc(50% + 100px) calc(100% - 305px), center calc(100% - 138px);
+    &-title {
+      font-size: 31px;
+      line-height: 31px;
+      margin: 0 auto 20px auto;
+    }
+    &-description {
+      display: block;
+    }
+    &-info, &-list {
+      width: 100%;
+      text-align: justify;
+    }
+    &-info {
+      margin-bottom: 320px;
+      &-paragraph {
+        font-size: 15px;
+        line-height: auto;
+        margin-bottom: 0;
+      }
+    }
+    &-list {
+      padding: 15px 0;
+      width: 100vw;
+      margin-right: calc(50% - 50vw);
+      background: #fff;
+      &-item {
+        font-weight: bold;
+        font-size: 13px;
+        line-height: normal;
+        width: 290px;
+        margin: 0 auto;
+        &:before {
+          top: 50%;
+          transform: translateY(-50%);
+          background: $list;
+          @include circle(2px);
+        }
+      }
+    }
+  }
 }

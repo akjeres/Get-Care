@@ -5,4 +5,12 @@
       left: calc(50% - 395px);
     }
   }
+  &-about {
+    &-list {
+      width: 285px;
+    }
+    &-info {
+      width: 300px;
+    }
+  }
 }
