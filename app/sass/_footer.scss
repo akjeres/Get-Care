@@ -7,6 +7,24 @@
   padding: 11px 15px 15px 15px;
   &-burger {
     display: none;
+    cursor: pointer;
+    position: absolute;
+    top: -34px;
+    width: 80px;
+    height: 34px;
+    background: #fff;
+    border-radius: 25px 25px 0 0;
+    left: 50%;
+    transform: translateX(-50%);
+    &-input {
+      display: none;
+    }
+    &-logo {
+      width: 35px;
+      display: block;
+      margin: 2px auto 0px auto;
+      height: auto;
+    }
   }
   &-form {
     display: flex;

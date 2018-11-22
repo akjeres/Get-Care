@@ -1,21 +1,23 @@
 .footer {
-  position: static;
-  padding: 00px 17px 24px 17px;
+  position: relative;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 00px 17px 0px 17px;
   background: #fff;
   z-index: 1;
   .container {
     position: relative;
-    padding-top: 30px;
-    &:before {
-      content: '';
-      position: absolute;
-      top: -35px;
-      width: 80px;
-      height: 35px;
-      background: url(../img/footer-burger-icon.png) center no-repeat #fff;
-      background-size: 35px;
-      left: 50%;
-      transform: translateX(-50%);
+    overflow: hidden;
+    height: 0;
+    transition: all 0.5s ease;
+  }
+  &.open {
+    padding-bottom: 24px;
+    .container {
+      padding-top: 30px;
+      height: 389px;
     }
   }
   &-form {
@@ -49,6 +51,15 @@
       font-weight: 400;
       border-radius: 8px;
       margin: 0 auto;
+    }
+  }
+  &-burger {
+    display: block;
+    &-input:checked {
+      & ~ .container {
+        padding: 30px 15px 24px 15px;
+        height: 389px;
+      }
     }
   }
 }
