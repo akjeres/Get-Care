@@ -1,0 +1,8 @@
+.main {
+  &-top {
+    background-position-x: calc(50% - 40px);
+    &-title {
+      left: calc(50% - 395px);
+    }
+  }
+}

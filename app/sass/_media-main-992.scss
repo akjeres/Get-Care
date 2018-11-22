@@ -1,0 +1,21 @@
+.main {
+  &-top {
+    overflow: hidden;
+    margin-top: 35px;
+    height: 71.875vw;
+    background-size: cover;
+    background-position: center bottom;
+    &-title {
+      width: 23.438vw;
+      font-size: 9.412vw;
+      line-height: 9.3vw;
+      height: auto;
+      top: 20.813vw;
+      left: calc(50% - 25vw);
+      img {
+        width: 69%;
+        top: -5%;
+      }
+    }
+  }
+}

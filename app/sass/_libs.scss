@@ -1,2 +1,6 @@
 @import url('https://fonts.googleapis.com/earlyaccess/opensanshebrew.css');
 @import "../libs/bootstrap-grid/bootstrap-grid";
+@font-face {
+  font-family: Mobil; /* Имя шрифта */
+  src: url(../fonts/mobil/texgyreadventor-regular.otf); /* Путь к файлу со шрифтом */
+}
