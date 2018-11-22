@@ -146,4 +146,27 @@
       }
     }
   }
+  &-codex {
+    height: auto;
+    background-image: url(../img/codex-right-mobile.png), url(../img/codex-left-mobile.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position-Y: bottom;
+    background-position-X: calc(100% + 40px), -120px;
+    .container {
+      padding-bottom: 716px;
+    }
+    &-title {
+      font-size: 35px;
+      line-height: 35px;
+      margin: 27px auto 18px auto;
+    }
+    &-description {
+      width: 100%;
+      font-size: 15px;
+      line-height: normal;
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+  }
 }

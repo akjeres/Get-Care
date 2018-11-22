@@ -206,4 +206,27 @@
       }
     }
   }
+  &-codex {
+    height: 700px;
+    background-image: url(../img/codex-right.png), url(../img/codex-left.png);
+    background-repeat: no-repeat;
+    background-position: right bottom, left bottom;
+    background-color: #ccccce;
+    &-title {
+      font-size: 74px;
+      line-height: 74px;
+      font-weight: bold;
+      color: #707070;
+      margin: 35px auto 80px auto;
+      text-align: center;
+    }
+    &-description {
+      width: 570px;
+      margin: 0 auto 32px auto;
+      text-align: center;
+      color: $text;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
 }
