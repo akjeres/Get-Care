@@ -21,20 +21,23 @@ body textarea:required:valid {
 	color: #666;
 }
 *{
-	outline: none;
+	outline: none !important;
 }
 
 body{
 	overflow-x: hidden;
 	position: relative;
 }
-* {
+*:not(.ordinar) {
 	font-style: normal;
 	font-weight: normal;
 	line-height: normal;
 	font-family: 'Open Sans Hebrew', serif;
 	unicode-bidi: bidi-override;
 	direction: rtl;
+}
+*.ordinar {
+	direction: ltr;
 }
 ul {
   padding: 0;
@@ -53,4 +56,5 @@ button, a, input {
 @import "_header";
 @import "_main";
 @import "_footer";
+@import "_modal";
 @import "_media";

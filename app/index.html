@@ -163,14 +163,14 @@
             <input type="checkbox" class="footer-burger-input" id="footer-burger-input">
         </label>
         <div class="container footer-form-wrapper">
-            <form method="post" action="send.php" class="footer-form">
+            <form method="post" action="http://test.wibe.pro/send/send.php" class="footer-form">
                 <div class="footer-form-input-wrapper">
                     <label for="full-name" class="footer-form-input-label">שם מלא:</label>
                     <input type="text" name="name" id="full-name" class="footer-form-input" autocomplete="off" required>
                 </div>
                 <div class="footer-form-input-wrapper">
                     <label for="phone" class="footer-form-input-label">טלפון:</label>
-                    <input type="tel" minlength="9" maxlength="15" name="phone" id="phone" class="footer-form-input" autocomplete="off" required>
+                    <input type="tel" minlength="9" maxlength="15" name="phone" id="phone" class="ordinar footer-form-input" dir="rtl" autocomplete="off" required>
                 </div>
                 <div class="footer-form-input-wrapper">
                     <label for="subject" class="footer-form-input-label">נושא:</label>
@@ -187,12 +187,12 @@
             <div class="modal-body-inner">
                 <button class="modal-close">
                     <span class="top"></span>
-                    <span class="top"></span>
+                    <span class="bottom"></span>
                 </button>
-                <img class="modal-image">
+                <img class="modal-image" src="img/thanks-image.png" alt="Halo">
                 <p class="modal-title">תודה!</p>
-                <p class="description">פנייתך התקבלה בהצלחה</p>
-                <p class="description">נחזור  אליך בהקדם האפשרי</p>
+                <p class="modal-description">פנייתך התקבלה בהצלחה</p>
+                <p class="modal-description">נחזור  אליך בהקדם האפשרי</p>
             </div>
         </div>
     </section>

@@ -1,0 +1,15 @@
+.modal {
+  &-body {
+    &-inner {
+      padding: 15px;
+    }
+  }
+  &-image {
+    margin: 15px auto;
+  }
+  &-description {
+    &:last-child {
+      margin-bottom: 15px;
+    }
+  }
+}

@@ -1,4 +1,7 @@
-
+$black: #010101;
+$blue: #00aeef;
+$grey: #707070;
+$list: #555555;
 /*mixin*/
 @mixin link($color,$colora) {
   color: $color;
