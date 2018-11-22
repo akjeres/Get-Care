@@ -141,3 +141,23 @@ for (var inputsCount = 0; inputsCount < inputs.length; inputsCount++) {
     digitInputsArr[inputsCount] = new DigitTel(inputs[inputsCount]);
 }
 /* Phone validation Ends*/
+
+/*MS Bugfix starts*/
+if (document.documentMode || /Edge/.test(navigator.userAgent)) {
+    var $window = $(window);
+    $window.bind('mousewheel DOMMouseScroll MozMousePixelScroll', function(e) {
+        var delta = parseInt(e.originalEvent.wheelDelta || -e.originalEvent.detail);
+        if (delta < 0) {
+            var gape = 200;
+            var winHeight = parseInt($window.innerHeight());
+            var docHeight = parseInt($(document).innerHeight());
+            var currentScroll = parseInt($window.scrollTop());
+            if (currentScroll >= (docHeight - winHeight - gape)) {
+                if ($window.width() > 992) {
+                    return false;
+                }
+            }
+        }
+    })
+}
+/*MS Bugfix ends*/

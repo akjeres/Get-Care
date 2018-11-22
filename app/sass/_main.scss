@@ -8,7 +8,7 @@
       position: relative;
     }
     &-title {
-      font-family: Mobil;
+      font-family: Mobil, "Open Sans Hebrew", sans-serif;
       font-size: 115px;
       line-height: 100px;
       width: 225px;
@@ -78,6 +78,7 @@
       color: #707070;
       text-align: center;
       font-size: 70px;
+      font-weight: bold;
       line-height: 70px;
       margin:20px auto 58px auto;
     }
@@ -117,12 +118,13 @@
     }
   }
   &-how {
-    background: #d8d9da;
+    background: url(../img/how-right.png) right bottom no-repeat, url(../img/how-left.png) left bottom no-repeat #d8d9da;
     height: 694px;
     &-title {
       color: #707070;
       text-align: center;
       font-size: 70px;
+      font-weight: bold;
       line-height: 70px;
       margin:27px auto 80px auto;
     }

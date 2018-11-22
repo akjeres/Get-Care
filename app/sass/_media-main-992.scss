@@ -116,6 +116,36 @@
       }
     }
   }
+  &-how {
+    background: #d8d9da;
+    height: auto;
+    &-title {
+      font-size: 35px;
+      line-height: 35px;
+      margin: 25px auto 50px auto;
+    }
+    &-list {
+      margin-bottom: 34px;
+      &-item {
+        width: 80px;
+        margin-left: 25px;
+        &-logo {
+          margin-bottom: 9px;
+          width: 55px;
+        }
+        &-description {
+          font-size: 13px;
+          line-height: normal;
+        }
+      }
+    }
+    &-description {
+      width: 290px;
+      margin: 0 auto 25px auto;
+      font-size: 35px;
+      line-height: 35px;
+    }
+  }
   &-team {
     background: #fff;
     &-title {
