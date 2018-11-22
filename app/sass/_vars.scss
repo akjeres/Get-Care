@@ -2,6 +2,7 @@ $black: #010101;
 $blue: #00aeef;
 $grey: #707070;
 $list: #555555;
+$phone: #1e0e31;
 /*mixin*/
 @mixin link($color,$colora) {
   color: $color;
@@ -29,6 +30,38 @@ $list: #555555;
   &:visited {
     text-decoration: none;
     color: $color;
+  }
+}
+
+@mixin blue-button() {
+  display: block;
+  color: #fff;
+  font-weight: bold;
+  background: $blue;
+  text-decoration: none;
+  box-shadow: none;
+  transition: all 0.3s ease;
+  &:visited {
+    background: $blue;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: none;
+  }
+  &:hover {
+    background: darken($blue, 5);
+    color: #fff;
+    text-decoration: none;
+  }
+  &:focus {
+    box-shadow: 0 0 2px rgba($black, 0.5);
+    color: #fff;
+    text-decoration: none;
+  }
+  &:active {
+    background: darken($blue, 7.5);
+    box-shadow: 0 0 2px rgba($black, 0.75);
+    color: #fff;
+    text-decoration: none;
   }
 }
 

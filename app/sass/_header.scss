@@ -1,7 +1,116 @@
 .header {
-  .container {
+  background: #fff;
+  box-shadow: 0 0 10px rgba($black, 0.5);
+  &-wrapper {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    width: 930px;
+    margin: 0 70px 0 170px;
+    position: relative;
+  }
+  &-primary {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    &-order {
+      font-size: 22px;
+      line-height: 24px;
+      padding: 12px;
+      @include blue-button();
+    }
+    &-phone {
+      margin-right: 37px;
+      @include link($phone, $black);
+      font-size: 22px;
+      line-height: 22px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  }
+  &-back {
+    @include blue-button();
+    font-size: 16px;
+    line-height: 14px;
+    padding: 3px 6px;
+    font-weight: bold;
+  }
+  &-nav {
+    &-list {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &-item {
+        border-left: 1px solid $phone;
+        font-size: 22px;
+        line-height: 22px;
+        font-weight: normal;
+        padding: 0 7px;
+        &:last-child {
+          border-left: 0;
+        }
+        &-link {
+          display: block;
+          @include link($phone, $black);
+          line-height: 22px;
+        }
+      }
+    }
+  }
+  &-logo {
+    position: absolute;
+    bottom: -68px;
+    height: 68px;
+    width: 158px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    text-align: center;
+    border-radius: 0 0 48px 48px;
+    img {
+      display: block;
+      width: auto;
+      margin: 0 auto;
+    }
+  }
+  &-burger {
+    display: none;
+    width: 33px;
+    height: 35px;
+    background: transparent;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    &-top {
+      transform: rotate(0deg) translateY(13px);
+    }
+    &-bottom {
+      transform: rotate(0deg) translateY(18px);
+    }
+    &-top, &-bottom {
+      width: 33px;
+      height: 3px;
+      background: #000;
+      display: block;
+      transition: all 0.3s ease;
+    }
+    &-input {
+      display: none;
+      &:checked {
+        & ~ .header-burger {
+          &-top {
+            width: 47px;
+            transform: rotate(-45deg) translate(-6px, 16px);
+          }
+          &-bottom {
+            width: 47px;
+            transform: rotate(45deg) translate(14px, 4px);
+          }
+        }
+      }
+    }
   }
 }
