@@ -1,0 +1,56 @@
+@import "libs";
+@import "vars";
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	&:before, &:after{
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	  }
+	}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	color: #666;
+}
+body input:required:valid,
+body textarea:required:valid {
+	color: #666;
+}
+*{
+	outline: none;
+}
+
+body{
+	overflow-x: hidden;
+	position: relative;
+}
+* {
+	font-style: normal;
+	font-weight: normal;
+	line-height: normal;
+	font-family: 'Open Sans Hebrew', serif;
+	unicode-bidi: bidi-override;
+	direction: rtl;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+p, h1, h2, h3, h4, h5, h6{
+  margin: 0;
+}
+body {
+	background: #fff;
+	min-width: 320px;
+}
+button, a, input {
+	outline: none !important;
+}
+@import "_header";
+@import "_main";
+@import "_footer";
+@import "_media";

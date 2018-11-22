@@ -1,0 +1,63 @@
+
+/*mixin*/
+@mixin link($color,$colora) {
+  color: $color;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  box-shadow: none;
+  outline: none;
+  transition: all 0.3s ease;
+  &:hover {
+    color: $colora;
+    text-decoration: none;
+  }
+  &:focus {
+    color: $color;
+    text-shadow: 0px 0px 10px rgba($colora, 0.6);
+    text-decoration: none;
+  }
+  &:active {
+    color: $colora;
+    text-shadow: 0px 0px 10px rgba($colora, 0.6);
+    text-decoration: none;
+  }
+  &:visited {
+    text-decoration: none;
+    color: $color;
+  }
+}
+
+@mixin img() {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+@mixin circle($diam) {
+  width: $diam;
+  height: $diam;
+  border-radius: 50%;
+}
+
+@mixin placeholder($color) {
+  &::-webkit-input-placeholder {
+    color:$color;
+    transition: color 0.3s ease;
+  }
+  &::-moz-placeholder          {
+    color:$color;
+    transition: color 0.3s ease;
+  }/* Firefox 19+ */
+  &:-moz-placeholder           {
+    color:$color;
+    transition: color 0.3s ease;
+  }/* Firefox 18- */
+  &:-ms-input-placeholder      {
+    color:$color;
+    transition: color 0.3s ease;
+  }
+}
+/*mixin*/
