@@ -1,0 +1,15 @@
+.footer {
+  padding: 11px 0 15px 0;
+  .container {
+    width: 100%;
+  }
+  &-form {
+    width: 100%;
+    max-width: 970px;
+    &-input {
+      &-wrapper {
+        margin-left: auto;
+      }
+    }
+  }
+}

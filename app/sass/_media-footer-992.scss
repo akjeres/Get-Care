@@ -1,0 +1,54 @@
+.footer {
+  position: static;
+  padding: 00px 17px 24px 17px;
+  background: #fff;
+  z-index: 1;
+  .container {
+    position: relative;
+    padding-top: 30px;
+    &:before {
+      content: '';
+      position: absolute;
+      top: -35px;
+      width: 80px;
+      height: 35px;
+      background: url(../img/footer-burger-icon.png) center no-repeat #fff;
+      background-size: 35px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &-form {
+    display: block;
+    &-input {
+      &-wrapper {
+        display: block;
+        margin-bottom: 18px;
+        &:nth-child(3) {
+          margin-bottom: 35px;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      &-label {
+        text-align: center;
+        font-size: 22px;
+        margin-bottom: 10px;
+        line-height: 22px;
+      }
+      width: 245px;
+      border-radius: 8px;
+      padding: 7px 15px;
+      text-align: center;
+      margin: 0 auto;
+    }
+    &-submit {
+      width: 185px;
+      font-size: 22px;
+      font-weight: 400;
+      border-radius: 8px;
+      margin: 0 auto;
+    }
+  }
+}

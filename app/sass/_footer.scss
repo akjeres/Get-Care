@@ -1,3 +1,64 @@
 .footer {
-
+  background: rgba(#fff, 0.5);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 11px 15px 15px 15px;
+  &-burger {
+    display: none;
+  }
+  &-form {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 970px;
+    margin: 0 auto;
+    &-input {
+      &-wrapper {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-left: 30px;
+        &:last-child {
+          margin-left: 0;
+        }
+      }
+      &-label {
+        color: #252525;
+        text-align: right;
+        display: block;
+        font-size: 16px;
+        line-height: 16px;
+        margin-bottom: 7px;
+      }
+      display: block;
+      width: 237px;
+      box-sizing: border-box;
+      border: 1px solid #252525;
+      color: #252525 !important;
+      background: transparent;
+      text-align: right;
+      font-size: 20px;
+      line-height: 25px;
+      padding: 6px 15px;
+      border-radius: 15px;
+      &:focus {
+        box-shadow: 0 0 3px rgba(#252525, 0.5);
+      }
+    }
+    &-submit {
+      font-size: 23px;
+      line-height: 23px;
+      font-weight: bold;
+      border-radius: 15px;
+      border: 0;
+      text-align: center;
+      width: 170px;
+      @include blue-button();
+      color: #252525 !important;
+      padding: 8px;
+    }
+  }
 }
