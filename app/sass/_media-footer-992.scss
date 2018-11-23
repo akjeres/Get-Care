@@ -1,12 +1,9 @@
 .footer {
-  position: relative;
-  left: 0;
-  top: 0;
-  right: 0;
+  position: fixed;
   bottom: 0;
-  padding: 00px 17px 0px 17px;
+  padding: 0px 17px 0px 17px;
   background: #fff;
-  z-index: 1;
+  z-index: 11;
   .container {
     position: relative;
     overflow: hidden;

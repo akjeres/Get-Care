@@ -46,12 +46,6 @@ $('.header-burger').on('change', function(e) {
         closeHeader();
     }
 });
-$('.footer-burger-input').on('change', function(e) {
-    $('html, body').animate({
-        scrollTop: $(document).height()
-    }, scrollduration);
-});
-
 
 /*Burger events end*/
 
@@ -141,11 +135,3 @@ for (var inputsCount = 0; inputsCount < inputs.length; inputsCount++) {
     digitInputsArr[inputsCount] = new DigitTel(inputs[inputsCount]);
 }
 /* Phone validation Ends*/
-
-/*MS Bugfix starts*/
-if (document.documentMode || /Edge/.test(navigator.userAgent)) {
-    $('.footer-burger-input').on('change', function(e) {
-        $(this).prev().toggleClass('checked');
-    });
-}
-/*MS Bugfix ends*/

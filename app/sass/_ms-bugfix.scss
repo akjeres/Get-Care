@@ -30,12 +30,7 @@ $delta: 21px;
 }
 .footer {
   &-burger {
-    top: -34px + $delta;
-    transition: top 0.5s ease;
-    &.checked {
-      top: -34px;
-      transition: none;
-    }
+    top: -33px;
   }
 }
 
