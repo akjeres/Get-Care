@@ -1,0 +1,53 @@
+$delta: 21px;
+.header {
+  &-logo {
+    bottom: -67px;
+  }
+  &-primary {
+    &-order {
+      padding: 19px 12px;
+    }
+  }
+}
+.main {
+  &-codex {
+    position: relative;
+    top: $delta;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: $delta;
+      position: absolute;
+      top: $delta * -1;
+      left: 0;
+      background: #ccccce;
+    }
+    &-title {
+      margin-top: 35px - $delta;
+    }
+  }
+}
+.footer {
+  &-burger {
+    top: -34px + $delta;
+    transition: top 0.5s ease;
+    &.checked {
+      top: -34px;
+      transition: none;
+    }
+  }
+}
+
+@media (max-width:992px) {
+  .header {
+    &-primary {
+      &-order {
+        padding: 8px;
+      }
+    }
+    &-logo {
+      bottom: -34px;
+    }
+  }
+}

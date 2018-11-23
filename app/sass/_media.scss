@@ -186,5 +186,8 @@
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  /* IE10 IE11 */
+  @import "ms-bugfix";
+}
+@supports (-ms-ime-align:auto) {
+  @import "ms-bugfix";
 }

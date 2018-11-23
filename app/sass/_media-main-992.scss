@@ -162,9 +162,9 @@
       width: 100%;
     }
     &-list {
-      margin: 20px auto 26px auto;
+      margin: 20px calc(50% - 155px) 26px calc(50% - 155px);
       flex-wrap: wrap;
-      width: 290px;
+      width: 310px;
       &-item {
         font-size: 13px;
         line-height: normal;
@@ -179,12 +179,12 @@
   &-codex {
     height: auto;
     background-image: url(../img/codex-right-mobile.png), url(../img/codex-left-mobile.png);
-    background-size: auto;
+    background-size: 281px, 283px;
     background-repeat: no-repeat;
     background-position-Y: bottom;
-    background-position-X: calc(100% + 40px), -120px;
+    background-position-X: calc(100% + 20px), -60px;
     .container {
-      padding-bottom: 716px;
+      padding-bottom: 340px;
     }
     &-title {
       font-size: 35px;
