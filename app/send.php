@@ -1,6 +1,6 @@
 <?php
 header('Access-Control-Allow-Origin: *');
-$to = 'akjeres@gmail.com';
+$to = 'info@wibe.team';
 $headers = "From: Get Care\r\n";
 $subject = 'Get Care Request';
 $userData;

@@ -76,7 +76,7 @@ $(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
     closeHeader();
     $('html, body').animate({
-        scrollTop: ($(window).width() > 992) ? $($.attr(this, 'href')).offset().top : $($.attr(this, 'href')).offset().top - 34
+        scrollTop: $($.attr(this, 'href')).offset().top - $('.header').innerHeight()
     }, scrollduration);
 });
 /* Smooth scroll ends */
